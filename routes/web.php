@@ -20,3 +20,16 @@ Route::get('/', function () {
     ];
     return view('homepage', $data);
 });
+
+Route::get('/about', function () {
+    $data = [
+        'name' => 'Simone',
+        'infos' => [
+            'address' => 'Via dei Fiori, 34',
+            'city' => 'Torino',
+            'state' => 'Italia',
+            'phone' => '1234567890'
+        ],
+    ];
+    return view('about', $data);
+});
